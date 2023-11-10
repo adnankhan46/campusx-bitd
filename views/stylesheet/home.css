@@ -1,0 +1,109 @@
+
+/******************* Boxes */
+.box{
+    background-color: #D9E5ED;
+    display: flex;
+    flex-direction: column;
+    height: 108px;
+    width: 302px;
+    border-radius: 23px;
+    padding: 12px;
+    position: relative;
+    top: 46px;
+    left: 90px;
+    transition: 0.3s;
+}
+.box:hover{
+    left: 80px;
+}
+
+.slogan{
+    font-family: "Poppins";
+    font-weight: 300;
+    color: #174D77;
+}
+.ns{
+    position: absolute;
+    bottom: 70px;
+    left: 54px;
+    font-family: "Poppins";
+    font-weight: 700;
+    color: #259FFF;
+}
+.h-profile{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 14px;
+    color: #259FFF;
+    position: absolute;
+    bottom: 6px;
+    left: 12px;
+}
+
+/******************* Landing Page */
+.home{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 74px;
+}
+
+.landing{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 55px;
+    
+}
+
+.landing h3, h4{
+    font-family: "Poppins";
+    color: #259FFF;
+    
+}
+
+.landing .register{
+    margin: 8px 0 4px 0;
+    font-family: "Poppins";
+    box-shadow: none;
+    padding: 4px;
+    border: 0px;
+    background-color: #D9E5ED;
+    font-size: 18px;
+    border-radius: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.landing .register:hover{
+    background-color: #259FFF;
+    color: #FFFFFF;
+}
+
+.landing .login{
+    font-family: "Poppins";
+     box-shadow: none;
+     padding: 4px;
+     border: 0px;
+     background-color: #259FFF;
+     font-size: 18px;
+     border-radius: 16px;
+     transition: 0.3s;
+     cursor: pointer;
+}
+.landing .login:hover{
+     background-color: #FFFFFF;
+     color: #259FFF;
+}
