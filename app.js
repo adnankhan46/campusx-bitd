@@ -18,7 +18,8 @@ app.set("view engine", "ejs");
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(express.static('./public'));
-app.use(express.static('./views/stylesheet'));
+app.use(express.static('./public/stylesheet'));
+// app.use(express.static('./views/stylesheet'));
 app.use("/", staticRoute);
 
 app.get('/hello', (req, res) => {

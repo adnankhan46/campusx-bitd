@@ -1,0 +1,284 @@
+/****************************************************************** Home */
+body {
+    overflow-x: hidden;
+  }
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 254px;
+    /* border: 1px solid red;    */
+}
+
+/****************************************************************** Left */
+.left-section{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid green; */
+}
+
+.box{
+    background-color: #D9E5ED;
+    display: flex;
+    flex-direction: column;
+    height: 108px;
+    width: 302px;
+    border-radius: 23px;
+    padding: 12px;
+    position: relative;
+    top: 12px;
+    left: 0px;
+    transition: 1s;
+}
+.box:hover{
+    left: 40px;
+}
+
+.box2{
+    background-color: #D9E5ED;
+    display: flex;
+    flex-direction: column;
+    height: 108px;
+    width: 302px;
+    border-radius: 23px;
+    padding: 12px;
+    position: relative;
+    top: 2px;
+    left: 0px;
+    transition: 1s;
+    margin: 20px 0 0 -56px;
+}
+.box2:hover{
+    left: 40px;
+}
+
+.slogan{
+    font-family: "Poppins";
+    font-weight: 300;
+    color: #174D77;
+    font-size: 14px;
+}
+.slogan p{
+    font-size: 16px;
+}
+.ns{
+    
+    font-family: "Poppins";
+    font-weight: 700;
+    color: #259FFF;
+}
+
+.h-profile{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 14px;
+    color: #259FFF;
+    position: absolute;
+    bottom: 6px;
+    left: 12px;
+}
+
+/****************************************************************** Right */
+
+.right-section{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 130px;
+    /* border: 1px solid yellow; */
+   
+}
+
+
+.right-section .s1, .s2{
+    display: flex;
+    justify-content: start;
+    font-family: "Poppins";
+    color: #259FFF; 
+}
+.s1 {
+    font-size: 14px;
+}
+.s2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.right-section .register{
+    margin: 0px 4px;
+    padding: 4px 10px;
+    font-family: "Poppins";
+    box-shadow: none;
+    border: 0px;
+    background-color: #D9E5ED;
+    font-size: 18px;
+    border-radius: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.right-section .register:hover{
+    background-color: #259FFF;
+    color: #FFFFFF;
+}
+
+.right-section .login{
+    margin: 8px 4px;
+    padding: 4px 10px;
+    font-family: "Poppins";
+     box-shadow: none;
+     border: 0px;
+     background-color: #259FFF;
+     color: #FFFFFF;
+     font-size: 18px;
+     border-radius: 16px;
+     transition: 0.3s;
+     cursor: pointer;
+}
+.right-section .login:hover{
+     background-color: #FFFFFF;
+     color: #259FFF;
+}
+
+/******************************************************* Responsive */
+
+@media (max-width: 1152px) {
+    .right-section{
+        right: -32px;
+}
+    .box{
+        height: 104px;
+        width: 282px;
+    }
+    .home{
+        padding: 12px 207px;
+    }
+}
+@media (max-width: 940px) {
+    .right-section{
+        right: -66px;
+}
+    .box{
+        height: 104px;
+        width: 282px;
+    }
+    .home{
+        padding: 12px 160px;
+    }
+}
+@media (max-width: 730px) {
+    .home {
+        position: relative;
+        top: 22px;
+        left: 56px;
+        flex-direction: column;
+        gap: 64px;
+    }
+    .right-section{
+        right: 74px;
+            flex-direction: column;
+            width: 207px;
+
+}
+.left-section {
+    position: relative;
+    left: -82px;
+}
+    .box{
+        height: 104px;
+        width: 282px;
+    }
+    .box2 {
+        height: 90px;
+        width: 240px;
+        top: 22px;
+        left: -34px;
+        margin: 0 -34px -9px -7px;
+    }
+}
+
+@media (max-width: 470px) {
+    .home{
+        flex-direction: column;
+        gap: 46px;
+        position: relative;
+        left: 0px;
+        top:26px;
+    }
+    .right-section{
+        right: 30px;
+        flex-direction: column;
+        width: 207px;
+    }
+    .left-section{
+        left: -18px;
+    }
+    .slogan p{
+        font-size: 14px;
+    }
+    .s1{
+        font-size: 18px;
+    }
+    .s2{
+        font-size: 22px;
+    }
+    .box{
+        height: 90px;
+        width: 240px;
+        top: -20px;
+        margin: 20px 0 0 -18px;
+    }
+    .box2 {
+        height: 90px;
+        width: 240px;
+        top: -11px;
+        left: -24px;
+        margin: 0 -34px -9px -7px;
+    }
+    .user-name{
+        font-size: 12px;
+    }
+    .slogan p{
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .home{
+        flex-direction: column;
+        gap: 24px;
+        position: relative;
+        left: -40px;
+    }
+    .right-section{
+        right: -16px;
+        flex-direction: column;
+        width: 207px;
+    }
+    .left-section{
+        left: 36px;
+    }
+    .slogan p{
+        font-size: 14px;
+    }
+    .box{
+        height: 90px;
+        width: 240px;
+        top: -20px;
+        margin: 20px 0 0 -18px;
+    }
+    .box2 {
+        height: 90px;
+        width: 240px;
+        top: -11px;
+        left: -24px;
+        margin: 0 -34px -9px -7px;
+    }
+    .user-name{
+        font-style: 12px;
+    }
+}
