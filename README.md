@@ -1,2 +1,2 @@
 # campusx-bitd
-build by AK
+A fun Experiment for the Campus of BITD
